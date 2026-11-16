@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/Neon Infinity Core Emblem.png" alt="Animisha logo" width="140">
+<img src="assets/logo.png" alt="Animisha logo" width="140">
 
 # Animisha
 
@@ -10,12 +10,11 @@ A local-first endpoint firewall and network monitor for Windows and Linux.
 It shows which program owns each connection, checks whether that program is signed, and enforces your rules in a fixed, predictable order. No cloud account. No telemetry.
 
 [![Version](https://img.shields.io/badge/version-0.3.0-01cfd6?style=flat-square)](../../releases/latest)
-[![License](https://img.shields.io/badge/license-Apache--2.0-2a6bff?style=flat-square)](LICENSE)
 [![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20Linux-0a1626?style=flat-square)](#install)
 [![Rust](https://img.shields.io/badge/built%20with-Rust-b7410e?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org/)
 [![Tauri](https://img.shields.io/badge/UI-Tauri%20v2-24c8db?style=flat-square&logo=tauri&logoColor=white)](https://tauri.app/)
 
-[**Download**](../../releases/latest) · [Features](#features) · [Install](#install) · [Rule engine](#the-rule-engine) · [Telegram alerts](#telegram-alerts) · [Build from source](#build-from-source)
+[**Download**](../../releases/latest) · [Features](#features) · [Install](#install) · [Rule engine](#the-rule-engine) · [Telegram alerts](#telegram-alerts)
 
 </div>
 
@@ -157,18 +156,6 @@ alert_retention_days = 90
 event_retention_days = 60
 ```
 
-## Build from source
-
-You need a recent stable [Rust toolchain](https://rustup.rs/). The desktop app also needs Node.js.
-
-```bash
-git clone https://github.com/<your-username>/animisha.git
-cd animisha
-cargo build --release --workspace
-```
-
-<!-- Replace with the exact desktop build steps for your repo layout, for example: cd desktop && npm install && npm run tauri build -->
-
 ## Known limitations
 
 - **Polling interval.** Sockets are checked once a second, so a connection that opens and closes within a few milliseconds between checks can be missed.
@@ -185,13 +172,13 @@ cargo build --release --workspace
 
 Animisha is a security tool, so please report vulnerabilities privately instead of opening a public issue. Use the repository's **Security** tab, then **Report a vulnerability**.
 
-## Contributing
+## Source code
 
-Issues and pull requests are welcome. For larger changes, open an issue first so we can agree on the approach.
+The source code is private. Releases are published here as installers with SHA-256 checksums so you can verify every download.
 
-## License
+Found a bug or have an idea? [Open an issue](../../issues).
 
-Apache-2.0. See [LICENSE](LICENSE).
+---
 
 <div align="center">
 <sub>Built by Khemendra Singh Khangarot</sub>
