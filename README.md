@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/logo.png" alt="Animisha logo" width="140">
+<img src="assets/Neon Infinity Core Emblem.png" alt="Animisha logo" width="140">
 
 # Animisha
 
